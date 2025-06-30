@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café El Balad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf4;
+      color: #2c2c2c;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #3e2f23;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2.5rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .dual-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+    .column {
+      flex: 1;
+      min-width: 280px;
+    }
+    .menu img, .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    footer {
+      background-color: #3e2f23;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #c3a27e;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Café El Balad</h1>
+    <p>نكهة الأصالة برؤية عصرية • L'authenticité revisitée</p>
+  </header>
+
+  <nav>
+    <a href="#about">من نحن / À propos</a>
+    <a href="#menu">القائمة / Menu</a>
+    <a href="#gallery">الصور / Galerie</a>
+    <a href="#contact">اتصل بنا / Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="dual-column">
+      <div class="column">
+        <h2>من نحن</h2>
+        <p>نحن مقهى جزائري يقدم تجربة فريدة تجمع بين القهوة الأصيلة والجو العصري المريح. هدفنا هو أن يشعر كل زبون وكأنه في بيته.</p>
+      </div>
+      <div class="column" dir="ltr" lang="fr">
+        <h2>À propos</h2>
+        <p>Un café algérien qui marie tradition et modernité. Nous offrons un espace chaleureux où chaque client se sent chez lui.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>قائمة الطعام / Menu</h2>
+    <p>اكتشف ألذ المشروبات والوجبات الخفيفة لدينا من خلال قائمة الطعام أدناه:</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://example.com/menu" alt="QR Menu">
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>الصور / Galerie</h2>
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Coffee 1">
+    <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=800&q=80" alt="Interior">
+    <img src="https://images.unsplash.com/photo-1508852951228-cb9023d1d2b4?auto=format&fit=crop&w=800&q=80" alt="Barista">
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا / Contact</h2>
+    <p>📍 الجزائر العاصمة - شارع الاستقلال</p>
+    <p>📞 +213 770 00 00 00</p>
+    <p>📷 Instagram: @cafe_elbalad</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Café El Balad | جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
